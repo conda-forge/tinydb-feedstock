@@ -1,16 +1,18 @@
 {% set version = "3.2.0" %}
+{% set name = "tinydb" %}
+{% set sha = "3d9378de3adcf0df4d76b334d6a6d834993d8d48c0a96d2ce6d2e57ca5e0a585" %}
 
 package:
-    name: tinydb
+    name: {{ name }}
     version: {{ version }}
 
 source:
-    url: https://github.com/msiemens/tinydb/archive/v{{ version }}.tar.gz
-    fn: tinydb-{{ version }}.tar.gz
-    sha256: 434062a7ec7cc385f8f43f49820acf6ed423fcea1d354caf0abf548bddf5ca6e
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+    fn: tinydb-{{ version }}.zip
+    sha256: {{ sha }}
 
 build:
-    number: 0
+    number: 1
     script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -23,17 +25,19 @@ requirements:
 test:
     imports:
         - tinydb
-    requires:
-        - pytest
-    commands:
-        - py.test {{ environ.SRC_DIR }}/tests -vrsx
 
 about:
     home: https://github.com/msiemens/tinydb
     license: MIT
-    summary: >
-        TinyDB is a tiny, document oriented database optimized for your 
-        happiness :)
+    license_family: MIT
+    # license file is not included. Should raise this on upstream.
+    #license_file: LICENCE
+    summary: TinyDB is a tiny, document oriented database optimized for your happiness :)
+    description: |
+        TinyDB is a lightweight document oriented database optimized for your
+        happiness :) It's written in pure Python and has no external
+        dependencies. The target are small apps that would be blown away by a
+        SQL-DB or an external database server.
 
 extra:
     recipe-maintainers:
