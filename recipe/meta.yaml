@@ -1,19 +1,20 @@
-{% set version = "3.2.0" %}
+{% set version = "3.5.0" %}
 {% set name = "tinydb" %}
-{% set sha = "3d9378de3adcf0df4d76b334d6a6d834993d8d48c0a96d2ce6d2e57ca5e0a585" %}
+{% set sha = "00d2394a8e90b6485e765bba4703126bf147d8165ca483e52def5cbdb0a73ca3" %}
 
 package:
     name: {{ name }}
     version: {{ version }}
 
 source:
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-    fn: tinydb-{{ version }}.zip
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    fn: tinydb-{{ version }}.tar.gz
     sha256: {{ sha }}
 
 build:
-    number: 1
+    number: 0
     script: python setup.py install --single-version-externally-managed --record=record.txt
+    noarch: python
 
 requirements:
     build:
@@ -45,3 +46,4 @@ extra:
         - licode
         - msiemens
         - tacaswell
+        - ericmjl
