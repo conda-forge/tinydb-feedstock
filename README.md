@@ -18,9 +18,7 @@ SQL-DB or an external database server.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tinydb-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tinydb-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tinydb-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tinydb-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tinydb-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tinydb-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/tinydb-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tinydb-feedstock)
 
 Current release info
 ====================
