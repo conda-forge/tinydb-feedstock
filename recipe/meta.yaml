@@ -7,8 +7,8 @@ package:
     version: {{ version }}
 
 source:
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-    fn: tinydb-{{ version }}.zip
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    fn: tinydb-{{ version }}.tar.gz
     sha256: {{ sha }}
 
 build:
