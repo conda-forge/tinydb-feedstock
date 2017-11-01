@@ -1,6 +1,6 @@
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 {% set name = "tinydb" %}
-{% set sha = "00d2394a8e90b6485e765bba4703126bf147d8165ca483e52def5cbdb0a73ca3" %}
+{% set sha = "64e6bc11c854ecc9ff7db2d0a26869ba47d9ebf79620260e40ae8ef611163c41" %}
 
 package:
     name: {{ name }}
