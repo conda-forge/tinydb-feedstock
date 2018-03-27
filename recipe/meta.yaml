@@ -1,4 +1,4 @@
-{% set version = "3.6.0" %}
+{% set version = "3.8.1.post1" %}
 {% set name = "tinydb" %}
 {% set sha = "64e6bc11c854ecc9ff7db2d0a26869ba47d9ebf79620260e40ae8ef611163c41" %}
 
