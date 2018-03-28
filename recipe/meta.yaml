@@ -1,53 +1,47 @@
 {% set version = "3.8.1.post1" %}
-{% set name = "tinydb" %}
-{% set sha = "961d7fbeb09843251b8a016965269c2fb0e898f16e8686bcf40e23d385219d78" %}
 
 package:
-    name: {{ name }}
-    version: {{ version }}
+  name: tinydb
+  version: {{ version }}
 
 source:
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    fn: tinydb-{{ version }}.tar.gz
-    sha256: {{ sha }}
+  url: https://pypi.io/packages/source/t/tinydb/tinydb-{{ version }}.tar.gz
+  sha256: 961d7fbeb09843251b8a016965269c2fb0e898f16e8686bcf40e23d385219d78
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record=record.txt
-    noarch: python
+  number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - setuptools
-        - python
-    run:
-        - python
+  build:
+    - pip
+    - python
+    - pytest-runner
+  run:
+    - python
 
 test:
   imports:
     - tinydb
-  requires:
-    - pytest-cov
-    - pytest-runner
-
 
 about:
-    home: https://github.com/msiemens/tinydb
-    license: MIT
-    license_family: MIT
-    # license file is not included. Should raise this on upstream.
-    #license_file: LICENCE
-    summary: TinyDB is a tiny, document oriented database optimized for your happiness :)
-    description: |
-        TinyDB is a lightweight document oriented database optimized for your
-        happiness :) It's written in pure Python and has no external
-        dependencies. The target are small apps that would be blown away by a
-        SQL-DB or an external database server.
+  home: https://github.com/msiemens/tinydb
+  license: MIT
+  license_family: MIT
+  # license file is not included. Should raise this on upstream.
+  #license_file: LICENCE
+  summary: TinyDB is a tiny, document oriented database optimized for your happiness :)
+  description: |
+    TinyDB is a lightweight document oriented database optimized for your
+    happiness :) It's written in pure Python and has no external
+    dependencies. The target are small apps that would be blown away by a
+    SQL-DB or an external database server.
 
 extra:
-    recipe-maintainers:
-        - ericdill
-        - licode
-        - msiemens
-        - tacaswell
-        - ericmjl
+  recipe-maintainers:
+    - ericdill
+    - licode
+    - msiemens
+    - tacaswell
+    - ericmjl
