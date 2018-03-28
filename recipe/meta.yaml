@@ -28,6 +28,7 @@ test:
     - tinydb
   requires:
     - pytest-cov
+    - pytest-runner
 
 
 about:
