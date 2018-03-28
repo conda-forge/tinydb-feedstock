@@ -24,8 +24,11 @@ requirements:
         - python
 
 test:
-    imports:
-        - tinydb
+  imports:
+    - tinydb
+  requires:
+    - pytest-cov
+
 
 about:
     home: https://github.com/msiemens/tinydb
