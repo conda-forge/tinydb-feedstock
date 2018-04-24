@@ -18,12 +18,15 @@ SQL-DB or an external database server.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/tinydb-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tinydb-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tinydb-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tinydb-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tinydb/badges/version.svg)](https://anaconda.org/conda-forge/tinydb)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tinydb/badges/downloads.svg)](https://anaconda.org/conda-forge/tinydb)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tinydb-green.svg)](https://anaconda.org/conda-forge/tinydb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tinydb.svg)](https://anaconda.org/conda-forge/tinydb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tinydb.svg)](https://anaconda.org/conda-forge/tinydb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tinydb.svg)](https://anaconda.org/conda-forge/tinydb) |
 
 Installing tinydb
 =================
