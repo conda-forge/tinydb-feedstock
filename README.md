@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About tinydb
 ============
 
@@ -22,8 +18,15 @@ SQL-DB or an external database server.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tinydb-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tinydb-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4451&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tinydb-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
