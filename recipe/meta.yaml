@@ -1,4 +1,4 @@
-{% set version = "3.14.1" %}
+{% set version = "3.14.2" %}
 
 package:
   name: tinydb
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tinydb/tinydb-{{ version }}.tar.gz
-  sha256: c92ddb8155b85dfecc7661465127b79d6972e3f5df5b1f04ee089f4f84184ecf
+  sha256: 582c8fc7c2d1fa09662aebf26255a56fa2e3ec96b090a438d08d9486c9ba4502
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -28,6 +28,7 @@ test:
 about:
   home: https://github.com/msiemens/tinydb
   license: MIT
+  license_file: LICENSE
   license_family: MIT
   # license file is not included. Should raise this on upstream.
   #license_file: LICENCE
