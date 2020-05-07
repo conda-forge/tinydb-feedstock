@@ -14,10 +14,11 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
     - python
     - pytest-runner
+    - poetry
   run:
     - python
 
