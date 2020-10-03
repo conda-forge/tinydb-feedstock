@@ -5,7 +5,7 @@ Home: https://github.com/msiemens/tinydb
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: TinyDB is a tiny, document oriented database optimized for your happiness :)
 
