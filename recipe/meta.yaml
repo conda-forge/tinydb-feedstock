@@ -17,11 +17,11 @@ requirements:
   host:
     - poetry
     - pip
-    - python
+    - python >=3.6
     - pytest-runner
     - conda-verify
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
