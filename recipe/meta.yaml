@@ -1,4 +1,4 @@
-{% set version = "4.8.1" %}
+{% set version = "4.8.2" %}
 
 package:
   name: tinydb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tinydb/tinydb-{{ version }}.tar.gz
-  sha256: 09c4c6a239da9be676b948f1f28074cffd1cf08e7af920c1df50424cc8bee8d6
+  sha256: f7dfc39b8d7fda7a1ca62a8dbb449ffd340a117c1206b68c50b1a481fb95181d
 
 build:
   number: 0
