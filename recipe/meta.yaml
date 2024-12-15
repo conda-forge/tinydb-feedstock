@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/tinydb/tinydb-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/tinydb/tinydb-{{ version }}.tar.gz
   sha256: f7dfc39b8d7fda7a1ca62a8dbb449ffd340a117c1206b68c50b1a481fb95181d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -17,13 +17,15 @@ requirements:
   host:
     - poetry
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - pytest-runner
     - conda-verify
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - tinydb
 
