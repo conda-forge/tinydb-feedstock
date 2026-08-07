@@ -15,11 +15,9 @@ build:
 
 requirements:
   host:
-    - poetry
+    - hatchling
     - pip
     - python {{ python_min }}
-    - pytest-runner
-    - conda-verify
   run:
     - python >={{ python_min }}
 
@@ -34,8 +32,6 @@ about:
   license: MIT
   license_file: LICENSE
   license_family: MIT
-  # license file is not included. Should raise this on upstream.
-  #license_file: LICENCE
   summary: TinyDB is a tiny, document oriented database optimized for your happiness :)
   description: |
     TinyDB is a lightweight document oriented database optimized for your
